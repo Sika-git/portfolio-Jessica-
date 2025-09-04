@@ -30,7 +30,7 @@ Puedes ver el portfolio en:
 
 ## Acceso a mi currículum
 
-Consulta mi CV actualizado desde el botón “Ver Currículum Vitae” en la web o [directamente aquí]https://drive.google.com/file/d/1dh3shiEfsf-DMBxvRDDfIEoysntKilJD/view?usp=sharing.
+Consulta mi CV actualizado directamente aquí https://drive.google.com/drive/folders/1-0ebHzj5iIcOWg0aaENOrfJPL2cOSY6V
 
 ---
 
@@ -42,7 +42,7 @@ Consulta mi CV actualizado desde el botón “Ver Currículum Vitae” en la web
 
 ## Contacto
 
-Puedes contactarme desde el formulario del portfolio o escribiendo a [sikapadi@ejemplo.com](mailto:sikapadi@ejemplo.com).
+Puedes contactarme desde el formulario del portfolio o escribiendo a [jessica.pgrf@gmail.com](mailto:jessica.pgrf@gmail.com).
 
 ---
 
