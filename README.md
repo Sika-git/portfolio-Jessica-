@@ -8,7 +8,7 @@ Aquí encontrarás información sobre mí, mis habilidades principales, una sele
 
 ## Sobre mí
 
-SoyJessica Padilla, apasionada por la ciberseguridad y el hacking ético. Me especializo en detectar vulnerabilidades, fortalecer sistemas y difundir buenas prácticas de seguridad. Siempre busco nuevos retos y oportunidades para seguir aprendiendo.
+Soy Jessica, apasionada por la ciberseguridad y el hacking ético. Me especializo en detectar vulnerabilidades, fortalecer sistemas y difundir buenas prácticas de seguridad. Siempre busco nuevos retos y oportunidades para seguir aprendiendo.
 
 ---
 
