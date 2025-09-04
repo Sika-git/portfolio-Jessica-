@@ -30,7 +30,7 @@ Puedes ver el portfolio en:
 
 ## Acceso a mi currículum
 
-Consulta mi CV actualizado directamente aquí https://drive.google.com/drive/folders/1-0ebHzj5iIcOWg0aaENOrfJPL2cOSY6V
+Consulta mi CV actualizado directamente aquí https://drive.google.com/file/d/1dIZSlQqT9HPvlGlFjobCL1JuBs6faz2x/view?usp=drive_link
 
 ---
 
