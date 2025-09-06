@@ -1,75 +1,134 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jessica Padilla – Portfolio Ciberseguridad</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio Jessica — Ciberseguridad & Hacking Ético</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --fg: #111a2f;
+      --accent: #16a34a;
+      --light: #ffffff;
+      --dark-bg: #0f1123;
+      --dark-fg: #e6eef8;
+      --transition: 0.3s ease;
+    }
+    [data-theme="dark"] {
+      --bg: var(--dark-bg);
+      --fg: var(--dark-fg);
+      --light: #0a0f1b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--fg); font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; }
+    header { padding: 20px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; background: var(--light); box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    header h1 { font-size: 1.6rem; }
+    header nav { margin-top: 10px; }
+    header nav a { margin: 0 12px; text-decoration: none; color: var(--fg); transition: color var(--transition); font-size: 0.95rem; }
+    header nav a:hover { color: var(--accent); }
+    #theme-toggle { background: none; border: none; cursor: pointer; font-size: 1.2rem; transition: color var(--transition); color: var(--fg); margin-left: 12px; }
+    #theme-toggle:hover { color: var(--accent); }
+    .hero { text-align: center; padding: 70px 20px; }
+    .hero h2 { font-size: 2.4rem; }
+    .hero p { font-size: 1.1rem; margin-top: 8px; }
+    section { padding: 50px 20px; max-width: 950px; margin: auto; }
+    h2.section-title { font-size: 1.8rem; margin-bottom: 16px; position: relative; display: inline-block; }
+    h2.section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--accent); margin-top: 6px; border-radius: 2px; }
+    .skills, .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 24px; }
+    .skill-card, .project-card { background: var(--light); padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform var(--transition); }
+    .skill-card:hover, .project-card:hover { transform: translateY(-4px); }
+    .skill-card h3, .project-card h3 { margin-bottom: 10px; color: var(--accent); }
+    .project-card p { margin-bottom: 10px; }
+    .project-card a { text-decoration: none; color: var(--accent); font-weight: bold; }
+    .contact form { display: grid; gap: 16px; }
+    .contact input, .contact textarea { width: 100%; padding: 12px; border: 1px solid rgba(0,0,0,0.2); border-radius: 6px; }
+    .contact button { width: 120px; padding: 12px; border: none; border-radius: 6px; background: var(--accent); color: var(--light); cursor: pointer; transition: opacity var(--transition); }
+    .contact button:hover { opacity: 0.9; }
+    .social { display: flex; gap: 14px; margin-top: 20px; justify-content: center; }
+    .social a { color: var(--fg); font-size: 1.4rem; transition: color var(--transition); }
+    .social a:hover { color: var(--accent); }
+    .cv-download { text-align: center; margin: 30px 0; }
+    .cv-download a { background: var(--accent); color: #fff; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    .cv-download a:hover { opacity: 0.9; }
+    footer { text-align: center; padding: 30px 20px; color: rgba( var(--fg), 0.6 ); font-size: 0.9rem; }
+    @media(max-width: 700px){ header{flex-direction:column;align-items:flex-start} header nav{margin-top:12px} }
+  </style>
 </head>
-<body>
+<body data-theme="light">
+
   <header>
-    <h1>🔐 Jessica Padilla</h1>
-    <p>Portfolio profesional en ciberseguridad ofensiva y defensiva</p>
+    <h1>Jessica Padilla</h1>
     <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#informes">Informes</a>
-      <a href="#recursos">Recursos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
     </nav>
+    <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
   </header>
 
-  <main>
-    <section id="sobre-mi">
-      <h2>🧠 Sobre mí</h2>
-      <p>Soy analista de ciberseguridad con enfoque en pruebas de penetración, análisis de vulnerabilidades y automatización. Trabajo con herramientas como Kali Linux, Metasploit, SQLMap, Burp Suite y más.</p>
-      <ul>
-        <li>💥 Pentesting Red y Blue Team</li>
-        <li>📡 Análisis de red y servicios (Nmap, Netcat)</li>
-        <li>🧪 Seguridad web (SQLi, XSS, LFI, RCE)</li>
-        <li>📜 Informes técnicos y documentación</li>
-      </ul>
-    </section>
+  <section class="hero">
+    <h2>Portfolio — Ciberseguridad & Hacking Ético</h2>
+    <p>Detecto vulnerabilidades, fortalezco sistemas y comparto buenas prácticas en seguridad digital.</p>
+    <div class="cv-download">
+      <a href="CV_Jessica.pdf" download>📄 Descargar CV</a>
+    </div>
+  </section>
 
-    <section id="proyectos">
-      <h2>🚧 Proyectos</h2>
-      <div class="card">
-        <h3>📌 Samba CVE-2007-2447</h3>
-        <p>Explotación remota con Metasploit y shell inversa en Metasploitable2.</p>
-        <a href="https://github.com/Sika-git/portfolio-Jessica-/blob/7db2f130ed9b62f919c9335d6da5d3f36c690b29/ejerc%20metasploit%20basicos%20pdf.pdf" target="_blank">Ver informe</a>
+  <section id="about">
+    <h2 class="section-title">Sobre mí</h2>
+    <p>Soy Jessica, apasionada por la ciberseguridad y hacking ético. Me especializo en identificar brechas, asegurar infraestructuras y promover prácticas seguras. Busco desafíos que me impulsen a crecer constantemente.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills">
+      <div class="skill-card"><h3>Analítica de vulnerabilidades</h3><p>Nmap, Nessus, OpenVAS</p></div>
+      <div class="skill-card"><h3>Testing & Pentesting</h3><p>Burp Suite, Metasploit, SQLMap</p></div>
+      <div class="skill-card"><h3>Seguridad Cloud</h3><p>GCP, AWS, auditorías y configuración segura</p></div>
+      <div class="skill-card"><h3>Frameworks de seguridad</h3><p>ISO 27001, NIST, OWASP</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Proyectos & Ejercicios</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Auditoría XSS & SQL</h3>
+        <p>Informes prácticos sobre inyección XSS y SQL.</p>
+        <a href="index.html" target="_blank">Ver más</a>
       </div>
-      <div class="card">
-        <h3>🔍 Nmap NSE Scripts</h3>
-        <p>Escaneo avanzado de puertos y detección de vulnerabilidades.</p>
-        <a href="https://github.com/Sika-git/portfolio-Jessica-/blob/7db2f130ed9b62f919c9335d6da5d3f36c690b29/Ejercicios%20nmap%20pdf.pdf" target="_blank">Ver scripts</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact">
+      <form onsubmit="return false;">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/jessica-pgrf" target="_blank">🔗 LinkedIn</a>
+        <a href="https://sika-git.github.io/portfolio-Jessica-/" target="_blank">💻 GitHub</a>
       </div>
-    </section>
-
-    <section id="informes">
-      <h2>📄 Informes Técnicos</h2>
-      <ul>
-        <li><a href="https://github.com/Sika-git/portfolio-Jessica-/blob/main/Ejerc%20INYECC%20SQL%20pdf.pdf" target="_blank">Inyección SQL con SQLMap – Mutillidae</a></li>
-        <li><a href="https://github.com/Sika-git/portfolio-Jessica-/blob/main/Ejerc%20INYECC%20CROSS-SITE%20pdf.pdf" target="_blank">XSS reflejado en OWASP BWA – Burp Suite</a></li>
-      </ul>
-    </section>
-
-    <section id="recursos">
-      <h2>📚 Recursos</h2>
-      <ul>
-        <li><a href="https://github.com/Sika-git/portfolio-Jessica-/blob/c882ce6a236785908581857c45aa045e2e2c9768/ejerc%20post-explotacion%20persist%20pdf.pdf" target="_blank">Post-explotación con Meterpreter</a></li>
-      </ul>
-    </section>
-
-    <section id="contacto">
-      <h2>📬 Contacto</h2>
-      <p>Email: <a href="mailto:sikapadi@gmail.com">sikapadi@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Sika-git/portfolio-Jessica-.git" target="_blank">github.com/Sika-git/portfolio-Jessica-.git</a></p>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Jessica Padilla – Portfolio creado con HTML & CSS</p>
+    © Jessica Padilla — Ciberseguridad & Hacking Ético — 2025
   </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      const isDark = document.body.getAttribute('data-theme') === 'dark';
+      document.body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      toggle.textContent = isDark ? '🌙' : '☀️';
+    });
+  </script>
+
 </body>
 </html>

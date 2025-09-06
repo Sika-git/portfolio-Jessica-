@@ -1,49 +1,9 @@
-# Jessica Padilla – Ciberseguridad & Hacking Ético
+# Portfolio de Jessica
 
-¡Bienvenido/a a mi portfolio profesional!
+Este es mi portfolio de ciberseguridad y hacking ético, desplegado con **GitHub Pages**.
 
-Aquí encontrarás información sobre mí, mis habilidades principales, una selección de mis trabajos y ejercicios, y cómo puedes contactarme. Este portfolio está diseñado en un estilo minimalista, enfocado en la claridad y la fácil navegación.
-
----
-
-## Sobre mí
-
-Soy Jessica, apasionada por la ciberseguridad y el hacking ético. Me especializo en detectar vulnerabilidades, fortalecer sistemas y difundir buenas prácticas de seguridad. Siempre busco nuevos retos y oportunidades para seguir aprendiendo.
-
----
-
-## ¿Qué encontrarás en este portfolio?
-
-- **Sobre mí:** Resumen profesional y motivación.
-- **Trabajos y ejercicios:** Proyectos, scripts, informes o retos (CTF, auditorías, scripting, etc.).
-- **Habilidades:** Herramientas, lenguajes y técnicas que domino.
-- **Contacto:** Formulario web y correo electrónico.
-
----
-
-## Ver online
-
-Puedes ver el portfolio en:  
-[https://Sika-git.github.io/portfolio-Jessica-/](https://Sika-git.github.io/portfolio-Jessica-/)
-
----
-
-## Acceso a mi currículum
-
-Consulta mi CV actualizado directamente aquí https://drive.google.com/file/d/1dIZSlQqT9HPvlGlFjobCL1JuBs6faz2x/view?usp=drive_link
-
----
-
-
-
-
-
-
-
-## Contacto
-
-Puedes contactarme desde el formulario del portfolio o escribiendo a [jessica.pgrf@gmail.com](mailto:jessica.pgrf@gmail.com).
-
----
-
-¡Gracias por visitar mi portfolio!
+## 🚀 Cómo verlo
+1. Sube este repositorio a GitHub.
+2. Activa GitHub Pages en la rama `main`.
+3. Tu portfolio estará disponible en:
+`https://<tu-usuario>.github.io/<nombre-repo>/`
